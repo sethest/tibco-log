@@ -4,8 +4,8 @@
 
 目的: 協助撰寫 logstash cfg。讓 logstash 透過 grok 套件，解析多種 TIBCO log files，然後寫入 Elasticsearch。  
 流程: files => logstash => elasticsearch => UI  
-環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, java 1.7.0_80-64bit    
-軟體: elasticsearch 1.6.0, logstash 1.5.2  
+環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, Java 1.7.0_80-64bit    
+軟體: Elasticsearch 1.6.0, Logstash 1.5.2  
 成果: 完成 ems, as, be, bw  共 4 種 log 格式。
 
   
@@ -127,7 +127,7 @@ Step2: 啟動ES
     
 Step3: 啟動ES UI
 
-    瀏覽器輸入 http://localhost:9200/_plugin/head/  (vagrant 記得要透過 forward_port)   
+    瀏覽器輸入 http://localhost:9200/_plugin/head/  (Vagrant 記得要透過 forward_port)   
 
 Step4: 啟動 logstash (請根據想要測試的檔案類型，取消註解。)
 
