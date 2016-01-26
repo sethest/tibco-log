@@ -5,6 +5,8 @@ wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0
 tar -zxvf elasticsearch-1.6.0.tar.gz
 rm elasticsearch-1.6.0.tar.gz
 
+## make second ES instance
+cp -r elasticsearch-1.6.0 elasticsearch-1.6.0_s1
 
 ## Elasticsearch UI
 cd ~/elasticsearch-1.6.0
