@@ -13,6 +13,6 @@ sudo bin/plugin -install mobz/elasticsearch-head
 
 ## Logstash
 cd ~
-wget https://download.ela
-tar -zxvf logstash-1.5.2.
+wget https://download.elastic.co/logstash/logstash/logstash-1.5.2.tar.gz
+tar -zxvf logstash-1.5.2.tar.gz
 rm logstash-1.5.2.tar.gz
