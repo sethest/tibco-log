@@ -7,7 +7,7 @@
 環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, Java 1.7.0_80-64bit    
 軟體: Elasticsearch 1.6.0, Logstash 1.5.2  
 成果: 完成 ems, as, be, bw  共 4 種 log 格式。
-
+附檔: Vagrantfile (提供參考),  pattern.xlsx (用來與"企業整合小組"溝通)
   
 註: tibco-log 目錄內的 cfg 或 bash  
   1. 雙 # 字號 (文字說明)   
@@ -141,6 +141,14 @@ Step5: 啟動 logstash *(請根據想要測試的檔案類型，取消註解。)
 Step6: 中斷 logstash
 
     Ctrl + C
+
+## Snapshot
+
+根據不同的格式，寫到不同的 index。  
+![show indices page](https://github.com/sethest/tibco-log/blob/master/indices.png "indices 圖片")
+
+可以利用時間來查詢。 (請善用瀏覽器的 F5 刷新，因為 UI 內建的刷新不會更新欄位。)
+![show query page](https://github.com/sethest/tibco-log/blob/master/query.png   "query 圖片")
 
 ## Reference
 https://grokdebug.herokuapp.com/  
