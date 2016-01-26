@@ -8,7 +8,7 @@ rm elasticsearch-1.6.0.tar.gz
 
 ## Elasticsearch UI
 cd ~/elasticsearch-1.6.0
-sudo bin/plugin -install mobz/elasticsearch-head
+bin/plugin -install mobz/elasticsearch-head
 
 
 ## Logstash
