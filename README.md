@@ -1,10 +1,11 @@
-# files_logstash_elasticsearch
+# tibco-log
 2016-01-18 開始支援 "企業整合小組"
 2016-01-30 結束
 
 目的: 協助撰寫 logstash cfg。讓 logstash 透過 grok 套件，解析多種 TIBCO log files，然後寫入 Elasticsearch。  
 環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, java 1.7.0_80-64bit    
 軟體: elasticsearch 1.6.0, logstash 1.5.2  
+流程: files => logstash => elasticsearch => UI
 成果: 完成 ems, as, be, bw  共 4 種 log 格式。
 
   
@@ -22,13 +23,11 @@ Elastcisearch:
     wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.tar.gz
     tar -zxvf elasticsearch-1.6.0.tar.gz
     rm elasticsearch-1.6.0.tar.gz
-    bash ~/tibco-log/es_start.sh
     
 Elasticsearch UI (https://github.com/mobz/elasticsearch-head)
 
     cd ~/elasticsearch-1.6.0
     sudo bin/plugin -install mobz/elasticsearch-head
-    瀏覽器輸入 http://localhost:9200/_plugin/head/  (vagrant 記得要透過 forward_port)
 
 Logstash:
 
@@ -115,6 +114,27 @@ output {
 
     每讀取一筆就刷新一次。(預設值為 500，bulk load 有助於提高寫入效能，設定 1 是方便測試。)
 
+## Start
+
+Step1: copy repository 64MB  (tibemsd1.log 占了 50 MB)
+
+    git clone https://github.com/sethest/tibco-log.git
+    
+Step2: 啟動ES
+
+    bash ~/tibco-log/es_start.sh
+    
+Step3: 啟動ES UI
+
+    瀏覽器輸入 http://localhost:9200/_plugin/head/  (vagrant 記得要透過 forward_port)   
+
+Step4: 啟動 logstash (請根據想要測試的檔案類型，取消註解。)
+
+    bash ~/tibco-log/start.sh
+
+Step5: 中斷 logstash
+
+    Ctrl + C
 
 ## Reference
 https://grokdebug.herokuapp.com/  
