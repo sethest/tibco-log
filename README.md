@@ -116,24 +116,29 @@ output {
 
 ## Start
 
-Step1: copy repository 64MB  _(tibemsd1.log 占了 50 MB)_
+Step1: copy repository 64MB  _(tibemsd1.log 是精簡版，只有50行，扣掉雜訊10行，正常會寫40行。)_
 
     cd ~
     git clone https://github.com/sethest/tibco-log.git
     
-Step2: 啟動ES
+
+Step2: 安裝軟體
+
+    bash ~/tibco-log/install_tool.sh
+
+Step3: 啟動ES
 
     bash ~/tibco-log/es_start.sh
     
-Step3: 啟動ES UI
+Step4: 啟動ES UI
 
     瀏覽器輸入 http://localhost:9200/_plugin/head/  (Vagrant 記得要透過 forward_port)   
 
-Step4: 啟動 logstash (請根據想要測試的檔案類型，取消註解。)
+Step5: 啟動 logstash (請根據想要測試的檔案類型，取消註解。)
 
     bash ~/tibco-log/start.sh
 
-Step5: 中斷 logstash
+Step6: 中斷 logstash
 
     Ctrl + C
 
