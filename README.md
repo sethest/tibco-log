@@ -134,7 +134,7 @@ Step4: 啟動ES UI
 
     瀏覽器輸入 http://localhost:9200/_plugin/head/  (Vagrant 記得要透過 forward_port)   
 
-Step5: 啟動 logstash (請根據想要測試的檔案類型，取消註解。)
+Step5: 啟動 logstash *(請根據想要測試的檔案類型，取消註解。)*
 
     bash ~/tibco-log/start.sh
 
