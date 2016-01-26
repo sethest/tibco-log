@@ -118,6 +118,7 @@ output {
 
 Step1: copy repository 64MB  _(tibemsd1.log 占了 50 MB)_
 
+    cd ~
     git clone https://github.com/sethest/tibco-log.git
     
 Step2: 啟動ES
