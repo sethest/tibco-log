@@ -14,7 +14,7 @@
   2. 單 # 字號 (option,視情況取消註解)
 
 ## Installation
-"環境" 的安裝步驟在此不贅述，請自行安裝 。
+"環境" 的安裝步驟不在此贅述，請自行安裝 。
 本範例 ~ 的路徑為: /home/vagrant  
 
 Elastcisearch:  
