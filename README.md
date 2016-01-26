@@ -1,7 +1,7 @@
 # tibco-log
-2016-01-18 開始支援 "企業整合小組"。
-2016-01-26 提供 github 。
-2016-01-30 結束。
+2016-01-18 開始支援 "企業整合小組"。  
+2016-01-26 提供 github 。  
+2016-01-30 結束。  
 
 目的: 協助撰寫 logstash cfg。讓 logstash 透過 grok 套件，解析多種 TIBCO log files，然後寫入 Elasticsearch。  
 流程: files => logstash => elasticsearch => UI  
