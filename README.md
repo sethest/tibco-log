@@ -116,7 +116,7 @@ output {
 
 ## Start
 
-Step1: copy repository 64MB  _(tibemsd1.log 是精簡版，只有50行，扣掉雜訊10行，正常會寫40行。)_
+Step1: copy repository 64MB  _(tibemsd1.log 是精簡版)_
 
     cd ~
     git clone https://github.com/sethest/tibco-log.git
