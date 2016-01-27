@@ -174,7 +174,7 @@ Step6: 中斷 logstash
   
 - 可以利用時間來查詢。 (請善用瀏覽器的 F5 刷新，因為 UI 內建的刷新不會更新欄位。)
   
-![show query page](https://github.com/sethest/tibco-log/blob/master/query.png   "query 圖片")
+![show query page](https://github.com/sethest/tibco-log/blob/master/query2.png "query 圖片")
 
 ## Reference
 https://grokdebug.herokuapp.com/  
