@@ -4,7 +4,7 @@
 2016-01-30 結束。  
 
 目的: 協助撰寫 logstash cfg。讓 logstash 透過 grok 套件，解析多種 TIBCO log files，然後寫入 Elasticsearch。  
-流程: files => logstash => elasticsearch => UI  
+流程: files => logstash => elasticsearch(ES) => UI  
 環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, Java 1.7.0_80-64bit    
 軟體: Elasticsearch 1.6.0, Logstash 1.5.2  
 成果: 完成 ems, as, be, bw  共 4 種 log 格式。  
