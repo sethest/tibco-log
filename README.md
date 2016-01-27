@@ -167,11 +167,12 @@ Step6: 中斷 logstash
 
 ## Snapshot
 
-根據不同的格式，寫到不同的 index。  
+- 根據不同的格式，寫到不同的 index。  
   
 ![show indices page](https://github.com/sethest/tibco-log/blob/master/indices.png "indices 圖片")
-
-可以利用時間來查詢。 (請善用瀏覽器的 F5 刷新，因為 UI 內建的刷新不會更新欄位。)
+  
+  
+- 可以利用時間來查詢。 (請善用瀏覽器的 F5 刷新，因為 UI 內建的刷新不會更新欄位。)
   
 ![show query page](https://github.com/sethest/tibco-log/blob/master/query.png   "query 圖片")
 
