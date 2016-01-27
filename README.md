@@ -39,8 +39,10 @@ Logstash:
 
 
 ## Input
->
+
 Example: tibemsd1.log (ems)  
+
+>
 ######################################################################  
 2015-08-19 08:43:37.759 Log file saved as '/EMSShare/tibco/ems/logs/tibemsd1.log.3'  
 2015-08-19 08:43:37.759 Log file restarted  
