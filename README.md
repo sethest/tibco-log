@@ -37,6 +37,26 @@ Logstash:
     tar -zxvf logstash-1.5.2.tar.gz
     rm logstash-1.5.2.tar.gz
 
+
+## Input
+>
+Example: tibemsd1.log (ems)  
+######################################################################  
+2015-08-19 08:43:37.759 Log file saved as '/EMSShare/tibco/ems/logs/tibemsd1.log.3'  
+2015-08-19 08:43:37.759 Log file restarted  
+...  
+...  
+2015-08-19 08:44:38.746 [cep@idc-bwap04p]: connect failed: server in standby mode  
+2015-08-19 08:44:39.441 [esdpadmin@seth]: connect failed: server in standby mode  
+2015-08-19 08:44:42.414 [cep@idc-bwap01p]: connect failed: server in standby mode  
+2015-08-19 15:20:13.750 Missing heartbeats from primary server 'tcp://10.68.57.222:27222'.  
+2015-08-19 15:20:14.629 ERROR: Slow clock tick 13, delayed messaging and timeouts may occur.  
+2015-08-19 15:20:14.629 Server activating on failure of 'tcp://10.68.57.222:27222'.  
+2015-08-19 15:20:14.629 Server rereading configuration.  
+...  
+...  
+
+
 ## Configuration
 
 Example: ems.conf
