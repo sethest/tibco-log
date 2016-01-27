@@ -139,7 +139,7 @@ output {
 
 ## Start
 
-Step1: copy repository 16MB
+Step1: 下載 repository (16MB)
 
     cd ~
     git clone https://github.com/sethest/tibco-log.git
