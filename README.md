@@ -149,11 +149,11 @@ Step2: 安裝軟體
 
     bash ~/tibco-log/install_tool.sh
 
-Step3: 啟動ES
+Step3: 啟動 ES
 
     bash ~/tibco-log/es_start.sh
     
-Step4: 啟動ES UI
+Step4: 啟動 UI
 
     瀏覽器輸入 http://localhost:9200/_plugin/head/  (Vagrant 記得要透過 forward_port)   
 
