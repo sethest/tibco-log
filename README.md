@@ -8,7 +8,7 @@
 環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, Java 1.7.0_80-64bit    
 軟體: Elasticsearch 1.6.0, Logstash 1.5.2  
 成果: 完成 ems, as, be, bw  共 4 種 log 格式。  
-目錄: conf, input(礙於資安疑慮，將 input 目錄壓縮加密，解壓密碼為 btserver 的密碼。)
+目錄: conf, input(礙於資安疑慮，將 input 目錄壓縮加密，解壓密碼為 btserver 的密碼。)  
 附檔: Vagrantfile (提供參考),  pattern.xlsx (用來與"企業整合小組"溝通)  
   
 註: tibco-log 目錄內的 cfg 或 bash  
