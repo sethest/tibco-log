@@ -8,8 +8,9 @@
 環境: VirtualBox 4.3.18, Vagrant 1.7.2, Ubuntu trusty64, Java 1.7.0_80-64bit    
 軟體: Elasticsearch 1.6.0, Logstash 1.5.2  
 成果: 完成 ems, as, be, bw  共 4 種 log 格式。  
-目錄: conf, input(礙於資安疑慮，將 input 目錄壓縮加密，解壓密碼為 btserver 的密碼。)  
 附檔: Vagrantfile (提供參考),  pattern.xlsx (用來與"企業整合小組"溝通)  
+
+**<重要> 礙於資安疑慮，將 input 目錄壓縮加密。(密碼為 btserver 的密碼)**
   
 註: tibco-log 目錄內的 cfg 或 bash  
   1. 雙 # 字號 (文字說明)   
@@ -140,29 +141,34 @@ output {
 
 ## Start
 
-Step1: 下載 repository (16MB)
+Step1: 下載 repository  
 
     cd ~
     git clone https://github.com/sethest/tibco-log.git
     
 
-Step2: 安裝軟體
+
+Step2: 解壓 input 目錄
+
+    unzip -P [密碼] ~/tibco-log/input.zip -d ~/tibco-log/
+
+Step3: 安裝軟體
 
     bash ~/tibco-log/install_tool.sh
 
-Step3: 啟動 ES
+Step4: 啟動 ES
 
     bash ~/tibco-log/es_start.sh
     
-Step4: 啟動 UI
+Step5: 啟動 UI
 
     瀏覽器輸入 http://localhost:9200/_plugin/head/  (Vagrant 記得要透過 forward_port)   
 
-Step5: 啟動 logstash *(請根據想要測試的檔案類型，取消註解。)*
+Step6: 啟動 logstash *(請根據想要測試的檔案類型，取消註解。)*
 
     bash ~/tibco-log/start.sh
 
-Step6: 中斷 logstash
+Step7: 中斷 logstash
 
     Ctrl + C
 
